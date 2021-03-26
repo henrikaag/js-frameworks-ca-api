@@ -1,2 +1,7 @@
-# js-frameworks-ca-api
-the api for js-frameworks-ca
+# Strapi application
+
+A quick description of your strapi application
+
+Username: admin@admin.com
+
+Password: Pass1234

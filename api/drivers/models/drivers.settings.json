@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drivers",
+  "info": {
+    "name": "drivers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "driver_number": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "team": {
+      "type": "string"
+    },
+    "driver_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
